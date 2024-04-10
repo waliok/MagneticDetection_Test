@@ -152,14 +152,14 @@ class ResultWifiScanViewController: UIViewController, Navigationable {
         
         tableView.snp.makeConstraints { make in
             make.top.leading.trailing.equalTo(containerView)
-            make.bottom.equalToSuperview()
+            make.height.equalTo(containerView.snp.height)
         }
         
         containerView.snp.makeConstraints { make in
             make.top.equalTo(vStack.snp.bottom).offset(30)
             make.leading.equalToSuperview().offset(20)
             make.trailing.equalToSuperview().offset(-20)
-            make.height.equalTo(tableView.snp.height)
+            make.bottom.lessThanOrEqualToSuperview()
         }
     }
 }
