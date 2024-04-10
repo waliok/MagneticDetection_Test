@@ -8,8 +8,6 @@
 import UIKit
 import SnapKit
 
-
-
 class MainViewController: UIViewController, UICollectionViewDataSource {
     
     private let features = [
@@ -63,10 +61,11 @@ class MainViewController: UIViewController, UICollectionViewDataSource {
         }
         
         wifiGroupView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(100)
+            make.top.equalTo(view.safeAreaLayoutGuide).offset(10)
             make.leading.equalToSuperview().offset(33)
             make.trailing.equalToSuperview().offset(-33)
-            make.bottom.equalTo(middleView.snp.top).offset(-24)
+            make.bottom.equalTo(middleView.snp.top).offset(-15)
+            make.height.equalTo(isBigResolution() ? 200 : 130)
         }
         
         middleView.snp.makeConstraints { make in
@@ -74,7 +73,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource {
             make.leading.equalToSuperview().offset(20)
             make.trailing.equalToSuperview().offset(-20)
             make.bottom.equalTo(collectionView.snp.top)
-            make.height.equalTo(200)
+            make.height.equalTo(isBigResolution() ? 200 : 170 )
         }
         
         collectionView.snp.makeConstraints { make in
@@ -86,8 +85,9 @@ class MainViewController: UIViewController, UICollectionViewDataSource {
     private func setupCollectionView() {
         
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 140, height: 140)
-        let spacing: CGFloat = 35
+        let itemSize = isBigResolution() ? 140 : 120
+        layout.itemSize = CGSize(width: itemSize, height: itemSize)
+        let spacing: CGFloat = isBigResolution() ? 35 : 15
         layout.minimumInteritemSpacing = spacing
         layout.minimumLineSpacing = spacing
         let totalCellWidth = layout.itemSize.width * 2

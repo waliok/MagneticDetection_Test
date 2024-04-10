@@ -23,7 +23,8 @@ class MiddleView: UIView {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.text = "WIFI_Name"
-        label.font = .robotoFont(ofSize: 34, weight: .bold)
+        let fontSize: CGFloat = isBigResolution() ? 34 : 25
+        label.font = .robotoFont(ofSize: fontSize, weight: .bold)
         label.textColor = .accent
         label.shadowOffset = .zero
         label.layer.shadowColor = UIColor.accent.cgColor

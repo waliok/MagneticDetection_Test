@@ -81,6 +81,7 @@ class ScanNetworkViewController: UIViewController {
     
     private func otherSetups() {
         
+        navigationItem.hidesBackButton = true
         view.backgroundColor = .black
         stopScanButton.setTitle("Stop", for: .normal)
         stopScanButton.addTarget(self, action: #selector(stopButtonTapped), for: .touchUpInside)
@@ -95,29 +96,35 @@ class ScanNetworkViewController: UIViewController {
         view.addSubview(stopScanButton)
         
         subTitleLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(125)
+            make.top.equalToSuperview().offset(125).priority(.low)
             make.centerX.equalToSuperview()
+            make.bottom.equalTo(titleLabel.snp.top)
         }
         
         titleLabel.snp.makeConstraints { make in
             make.top.equalTo(subTitleLabel.snp.bottom).offset(10)
+            make.bottom.equalTo(scanRadarView.snp.top)
             make.centerX.equalToSuperview()
         }
         
         scanRadarView.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
+//            make.centerY.equalToSuperview()
+            make.height.equalTo(scanRadarView.snp.width)
             make.leading.trailing.equalToSuperview()
+            make.top.equalTo(titleLabel.snp.bottom).offset(70).priority(.low)
+            make.bottom.equalTo(stack.snp.top).offset(30).priority(.low)
         }
         
         stack.snp.makeConstraints { make in
-            make.bottom.equalTo(stopScanButton.snp.top).offset(-60)
+            make.top.equalTo(scanRadarView.snp.bottom)
+            make.bottom.equalTo(stopScanButton.snp.top).offset(-60).priority(.low)
             make.centerX.equalToSuperview()
         }
         
         stopScanButton.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(20)
             make.trailing.equalToSuperview().offset(-20)
-            make.bottom.equalToSuperview().offset(-70)
+            make.bottom.equalToSuperview().offset(-70).priority(.medium)
             make.height.equalTo(50)
         }
     }

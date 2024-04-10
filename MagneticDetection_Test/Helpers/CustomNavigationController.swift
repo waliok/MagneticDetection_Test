@@ -12,29 +12,54 @@ class CustomNavigationController: UINavigationController, UINavigationController
     override init(rootViewController: UIViewController) {
         super.init(rootViewController: rootViewController)
         commonInit()
+        initialSetup()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
+        initialSetup()
     }
     
     override func viewDidLoad() {
-            super.viewDidLoad()
-            
-            delegate = self
-        }
+        super.viewDidLoad()
+        
+        delegate = self
+    }
     
     private func commonInit() {
         applyDefaultSetting()
     }
     
+    // MARK: - Setups
+    
+    private func initialSetup() {
+        // This code does not support `interactivePopGestureRecognizer`, therefore we disable it
+        interactivePopGestureRecognizer?.delegate = nil
+    }
+    
+    // MARK: - Overrides
+    
+    override func popViewController(animated: Bool) -> UIViewController? {
+        if shouldNavigationPopToRoot {
+            return super.popToRootViewController(animated: animated)?.last
+        }
+        
+        return super.popViewController(animated: animated)
+    }
+    
+    // MARK: - Helpers
+    
+    private var shouldNavigationPopToRoot: Bool {
+        return (topViewController as? Navigationable)?.shouldCustomNavigationControllerPopToRoot() == true
+    }
+    
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-           // Check if the view controller about to be shown has the title "Main"
-           if viewController.title == "Main" {
-               applyRootViewControllerSettings()
-           }
-       }
+        // Check if the view controller about to be shown has the title "Main"
+        if viewController.title == "Main" {
+            applyRootViewControllerSettings()
+        }
+    }
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         super.pushViewController(viewController, animated: animated)
@@ -46,7 +71,7 @@ class CustomNavigationController: UINavigationController, UINavigationController
     }
     
     private func applyRootViewControllerSettings() {
-            // Apply specific settings to the root view controller
+        // Apply specific settings to the root view controller
         let navigationBarAppearance = UINavigationBarAppearance()
         navigationBarAppearance.configureWithTransparentBackground()
         navigationBarAppearance.backgroundColor = .clear
@@ -58,7 +83,7 @@ class CustomNavigationController: UINavigationController, UINavigationController
         navigationBar.standardAppearance = navigationBarAppearance
         navigationBar.compactAppearance = navigationBarAppearance
         navigationBar.scrollEdgeAppearance = navigationBarAppearance
-        }
+    }
     
     private func applyDefaultSetting() {
         

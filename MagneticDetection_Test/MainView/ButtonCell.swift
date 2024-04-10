@@ -50,9 +50,10 @@ class ButtonCell: UICollectionViewCell {
     
     private func setupViewsAndConstraints() {
         contentView.addSubview(stackView)
+        let verticalInsets: CGFloat = isBigResolution() ? 23 : 15
         
         stackView.snp.makeConstraints { make in
-            make.edges.equalToSuperview().inset(UIEdgeInsets(top: 23, left: 10, bottom: 23, right: 10))
+            make.edges.equalToSuperview().inset(UIEdgeInsets(top: verticalInsets, left: 10, bottom: verticalInsets, right: 10))
         }
         
         iconImageView.snp.makeConstraints { make in

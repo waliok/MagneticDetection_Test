@@ -8,7 +8,11 @@
 import UIKit
 import SnapKit
 
-class ResultWifiScanViewController: UIViewController {
+protocol Navigationable: AnyObject {
+    func shouldCustomNavigationControllerPopToRoot() -> Bool
+}
+
+class ResultWifiScanViewController: UIViewController, Navigationable {
     
     private let foundDevices: [Device]
     
@@ -94,6 +98,10 @@ class ResultWifiScanViewController: UIViewController {
         setupTableView()
         setupViewsAndConstraints()
     }
+    
+    func shouldCustomNavigationControllerPopToRoot() -> Bool {
+            return true
+        }
     
     private func setupTableView() {
         tableView = CustomTableView()
