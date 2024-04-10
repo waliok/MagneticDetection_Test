@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA0DB3612BBD841900487C31 /* ScanNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0DB3602BBD841900487C31 /* ScanNetworkViewController.swift */; };
+		CA0DB3642BBD988200487C31 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = CA0DB3632BBD988200487C31 /* Lottie */; };
+		CA0DB3662BBD9C3A00487C31 /* ScanRadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0DB3652BBD9C3900487C31 /* ScanRadarView.swift */; };
+		CA0DB3692BBDF1F800487C31 /* ResultWifiScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0DB3682BBDF1F800487C31 /* ResultWifiScanViewController.swift */; };
+		CA0DB36B2BBDFC2200487C31 /* ResultWifiScanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0DB36A2BBDFC2200487C31 /* ResultWifiScanTableViewCell.swift */; };
+		CA0DB36D2BBEAF4E00487C31 /* DetailWifiScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0DB36C2BBEAF4E00487C31 /* DetailWifiScanViewController.swift */; };
+		CA0DB36F2BBEAF9900487C31 /* DetailsViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0DB36E2BBEAF9900487C31 /* DetailsViewHeader.swift */; };
+		CA0DB3712BBECD9D00487C31 /* DetailsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0DB3702BBECD9D00487C31 /* DetailsViewCell.swift */; };
+		CA0DB3752BC032B800487C31 /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0DB3742BC032B800487C31 /* Font+.swift */; };
+		CA0DB3772BC039FA00487C31 /* DevicesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0DB3762BC039FA00487C31 /* DevicesData.swift */; };
+		CA0DB3792BC0585400487C31 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0DB3782BC0585300487C31 /* CustomNavigationController.swift */; };
+		CA0DB37B2BC0ACFF00487C31 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0DB37A2BC0ACFF00487C31 /* CustomButton.swift */; };
+		CA0DB37D2BC43DEC00487C31 /* FakeWiFiScanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0DB37C2BC43DEB00487C31 /* FakeWiFiScanManager.swift */; };
+		CA0DB37F2BC5571000487C31 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0DB37E2BC5571000487C31 /* CustomTableView.swift */; };
+		CA0DB3832BC68AB700487C31 /* MagnetometerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0DB3822BC68AB700487C31 /* MagnetometerManager.swift */; };
+		CA55A5BC2BBC718100FF7E2C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55A5BB2BBC718100FF7E2C /* MainViewController.swift */; };
+		CA55A5BF2BBC71AD00FF7E2C /* +.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55A5BE2BBC71AD00FF7E2C /* +.swift */; };
+		CA55A5C22BBC7A4A00FF7E2C /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55A5C12BBC7A4A00FF7E2C /* ButtonCell.swift */; };
+		CA55A5D12BBC856900FF7E2C /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA55A5C32BBC856900FF7E2C /* LICENSE.txt */; };
+		CA55A5D22BBC856900FF7E2C /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA55A5C42BBC856900FF7E2C /* Roboto-Black.ttf */; };
+		CA55A5D32BBC856900FF7E2C /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA55A5C52BBC856900FF7E2C /* Roboto-BlackItalic.ttf */; };
+		CA55A5D42BBC856900FF7E2C /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA55A5C62BBC856900FF7E2C /* Roboto-Bold.ttf */; };
+		CA55A5D52BBC856900FF7E2C /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA55A5C72BBC856900FF7E2C /* Roboto-BoldItalic.ttf */; };
+		CA55A5D62BBC856900FF7E2C /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA55A5C82BBC856900FF7E2C /* Roboto-Italic.ttf */; };
+		CA55A5D72BBC856900FF7E2C /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA55A5C92BBC856900FF7E2C /* Roboto-Light.ttf */; };
+		CA55A5D82BBC856900FF7E2C /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA55A5CA2BBC856900FF7E2C /* Roboto-LightItalic.ttf */; };
+		CA55A5D92BBC856900FF7E2C /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA55A5CB2BBC856900FF7E2C /* Roboto-Medium.ttf */; };
+		CA55A5DA2BBC856900FF7E2C /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA55A5CC2BBC856900FF7E2C /* Roboto-MediumItalic.ttf */; };
+		CA55A5DB2BBC856900FF7E2C /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA55A5CD2BBC856900FF7E2C /* Roboto-Regular.ttf */; };
+		CA55A5DC2BBC856900FF7E2C /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA55A5CE2BBC856900FF7E2C /* Roboto-Thin.ttf */; };
+		CA55A5DD2BBC856900FF7E2C /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA55A5CF2BBC856900FF7E2C /* Roboto-ThinItalic.ttf */; };
+		CA55A5DF2BBCA8F800FF7E2C /* MiddleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55A5DE2BBCA8F800FF7E2C /* MiddleView.swift */; };
+		CA6704932BBAC88C0049F26B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6704922BBAC88C0049F26B /* AppDelegate.swift */; };
+		CA6704952BBAC88C0049F26B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6704942BBAC88C0049F26B /* SceneDelegate.swift */; };
+		CA6704972BBAC88C0049F26B /* MagnetometerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6704962BBAC88C0049F26B /* MagnetometerVC.swift */; };
+		CA67049C2BBAC88E0049F26B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA67049B2BBAC88E0049F26B /* Assets.xcassets */; };
+		CA67049F2BBAC88E0049F26B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CA67049E2BBAC88E0049F26B /* Base */; };
+		CA6704A72BBAF2B10049F26B /* PreviewExt+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6704A62BBAF2B00049F26B /* PreviewExt+.swift */; };
+		CA6704A92BBB02FA0049F26B /* GaugeViewElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6704A82BBB02FA0049F26B /* GaugeViewElements.swift */; };
+		CA6704AC2BBB09170049F26B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CA6704AB2BBB09170049F26B /* SnapKit */; };
+		CA6704AE2BBB09170049F26B /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = CA6704AD2BBB09170049F26B /* SnapKit-Dynamic */; };
+		CA6704B52BBC2EEB0049F26B /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6704B42BBC2EEB0049F26B /* GaugeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA0DB3602BBD841900487C31 /* ScanNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanNetworkViewController.swift; sourceTree = "<group>"; };
+		CA0DB3652BBD9C3900487C31 /* ScanRadarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanRadarView.swift; sourceTree = "<group>"; };
+		CA0DB3682BBDF1F800487C31 /* ResultWifiScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultWifiScanViewController.swift; sourceTree = "<group>"; };
+		CA0DB36A2BBDFC2200487C31 /* ResultWifiScanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultWifiScanTableViewCell.swift; sourceTree = "<group>"; };
+		CA0DB36C2BBEAF4E00487C31 /* DetailWifiScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWifiScanViewController.swift; sourceTree = "<group>"; };
+		CA0DB36E2BBEAF9900487C31 /* DetailsViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewHeader.swift; sourceTree = "<group>"; };
+		CA0DB3702BBECD9D00487C31 /* DetailsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewCell.swift; sourceTree = "<group>"; };
+		CA0DB3742BC032B800487C31 /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
+		CA0DB3762BC039FA00487C31 /* DevicesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesData.swift; sourceTree = "<group>"; };
+		CA0DB3782BC0585300487C31 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		CA0DB37A2BC0ACFF00487C31 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		CA0DB37C2BC43DEB00487C31 /* FakeWiFiScanManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeWiFiScanManager.swift; sourceTree = "<group>"; };
+		CA0DB37E2BC5571000487C31 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
+		CA0DB3822BC68AB700487C31 /* MagnetometerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetometerManager.swift; sourceTree = "<group>"; };
+		CA55A5BB2BBC718100FF7E2C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CA55A5BE2BBC71AD00FF7E2C /* +.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+.swift"; sourceTree = "<group>"; };
+		CA55A5C12BBC7A4A00FF7E2C /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
+		CA55A5C32BBC856900FF7E2C /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		CA55A5C42BBC856900FF7E2C /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		CA55A5C52BBC856900FF7E2C /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		CA55A5C62BBC856900FF7E2C /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		CA55A5C72BBC856900FF7E2C /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		CA55A5C82BBC856900FF7E2C /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		CA55A5C92BBC856900FF7E2C /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		CA55A5CA2BBC856900FF7E2C /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		CA55A5CB2BBC856900FF7E2C /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		CA55A5CC2BBC856900FF7E2C /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		CA55A5CD2BBC856900FF7E2C /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		CA55A5CE2BBC856900FF7E2C /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		CA55A5CF2BBC856900FF7E2C /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		CA55A5DE2BBCA8F800FF7E2C /* MiddleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleView.swift; sourceTree = "<group>"; };
+		CA67048F2BBAC88C0049F26B /* MagneticDetection_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagneticDetection_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6704922BBAC88C0049F26B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA6704942BBAC88C0049F26B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CA6704962BBAC88C0049F26B /* MagnetometerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnetometerVC.swift; sourceTree = "<group>"; };
+		CA67049B2BBAC88E0049F26B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA67049E2BBAC88E0049F26B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA6704A02BBAC88E0049F26B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA6704A62BBAF2B00049F26B /* PreviewExt+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewExt+.swift"; sourceTree = "<group>"; };
+		CA6704A82BBB02FA0049F26B /* GaugeViewElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeViewElements.swift; sourceTree = "<group>"; };
+		CA6704B42BBC2EEB0049F26B /* GaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA67048C2BBAC88C0049F26B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6704AC2BBB09170049F26B /* SnapKit in Frameworks */,
+				CA6704AE2BBB09170049F26B /* SnapKit-Dynamic in Frameworks */,
+				CA0DB3642BBD988200487C31 /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA0DB35F2BBD83D800487C31 /* ScanNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				CA0DB3602BBD841900487C31 /* ScanNetworkViewController.swift */,
+				CA0DB3652BBD9C3900487C31 /* ScanRadarView.swift */,
+			);
+			path = ScanNetwork;
+			sourceTree = "<group>";
+		};
+		CA0DB3672BBDF19700487C31 /* ResultWifiScan */ = {
+			isa = PBXGroup;
+			children = (
+				CA0DB3682BBDF1F800487C31 /* ResultWifiScanViewController.swift */,
+				CA0DB36A2BBDFC2200487C31 /* ResultWifiScanTableViewCell.swift */,
+				CA0DB36C2BBEAF4E00487C31 /* DetailWifiScanViewController.swift */,
+				CA0DB3702BBECD9D00487C31 /* DetailsViewCell.swift */,
+				CA0DB36E2BBEAF9900487C31 /* DetailsViewHeader.swift */,
+			);
+			path = ResultWifiScan;
+			sourceTree = "<group>";
+		};
+		CA0DB3802BC5C23100487C31 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CA0DB3822BC68AB700487C31 /* MagnetometerManager.swift */,
+				CA0DB37C2BC43DEB00487C31 /* FakeWiFiScanManager.swift */,
+				CA0DB3762BC039FA00487C31 /* DevicesData.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		CA0DB3812BC5C3BF00487C31 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CA55A5BE2BBC71AD00FF7E2C /* +.swift */,
+				CA6704A62BBAF2B00049F26B /* PreviewExt+.swift */,
+				CA0DB3742BC032B800487C31 /* Font+.swift */,
+				CA0DB3782BC0585300487C31 /* CustomNavigationController.swift */,
+				CA0DB37A2BC0ACFF00487C31 /* CustomButton.swift */,
+				CA0DB37E2BC5571000487C31 /* CustomTableView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CA55A5BD2BBC718C00FF7E2C /* MagnetomenterView */ = {
+			isa = PBXGroup;
+			children = (
+				CA6704962BBAC88C0049F26B /* MagnetometerVC.swift */,
+				CA6704B42BBC2EEB0049F26B /* GaugeView.swift */,
+				CA6704A82BBB02FA0049F26B /* GaugeViewElements.swift */,
+			);
+			path = MagnetomenterView;
+			sourceTree = "<group>";
+		};
+		CA55A5C02BBC79D500FF7E2C /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				CA55A5BB2BBC718100FF7E2C /* MainViewController.swift */,
+				CA55A5DE2BBCA8F800FF7E2C /* MiddleView.swift */,
+				CA55A5C12BBC7A4A00FF7E2C /* ButtonCell.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		CA55A5D02BBC856900FF7E2C /* RobotoFont */ = {
+			isa = PBXGroup;
+			children = (
+				CA55A5C32BBC856900FF7E2C /* LICENSE.txt */,
+				CA55A5C42BBC856900FF7E2C /* Roboto-Black.ttf */,
+				CA55A5C52BBC856900FF7E2C /* Roboto-BlackItalic.ttf */,
+				CA55A5C62BBC856900FF7E2C /* Roboto-Bold.ttf */,
+				CA55A5C72BBC856900FF7E2C /* Roboto-BoldItalic.ttf */,
+				CA55A5C82BBC856900FF7E2C /* Roboto-Italic.ttf */,
+				CA55A5C92BBC856900FF7E2C /* Roboto-Light.ttf */,
+				CA55A5CA2BBC856900FF7E2C /* Roboto-LightItalic.ttf */,
+				CA55A5CB2BBC856900FF7E2C /* Roboto-Medium.ttf */,
+				CA55A5CC2BBC856900FF7E2C /* Roboto-MediumItalic.ttf */,
+				CA55A5CD2BBC856900FF7E2C /* Roboto-Regular.ttf */,
+				CA55A5CE2BBC856900FF7E2C /* Roboto-Thin.ttf */,
+				CA55A5CF2BBC856900FF7E2C /* Roboto-ThinItalic.ttf */,
+			);
+			path = RobotoFont;
+			sourceTree = "<group>";
+		};
+		CA6704862BBAC88C0049F26B = {
+			isa = PBXGroup;
+			children = (
+				CA6704912BBAC88C0049F26B /* MagneticDetection_Test */,
+				CA6704902BBAC88C0049F26B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA6704902BBAC88C0049F26B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA67048F2BBAC88C0049F26B /* MagneticDetection_Test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA6704912BBAC88C0049F26B /* MagneticDetection_Test */ = {
+			isa = PBXGroup;
+			children = (
+				CA6704922BBAC88C0049F26B /* AppDelegate.swift */,
+				CA6704942BBAC88C0049F26B /* SceneDelegate.swift */,
+				CA55A5C02BBC79D500FF7E2C /* MainView */,
+				CA55A5BD2BBC718C00FF7E2C /* MagnetomenterView */,
+				CA0DB35F2BBD83D800487C31 /* ScanNetwork */,
+				CA0DB3672BBDF19700487C31 /* ResultWifiScan */,
+				CA0DB3802BC5C23100487C31 /* Managers */,
+				CA0DB3812BC5C3BF00487C31 /* Helpers */,
+				CA55A5D02BBC856900FF7E2C /* RobotoFont */,
+				CA67049B2BBAC88E0049F26B /* Assets.xcassets */,
+				CA67049D2BBAC88E0049F26B /* LaunchScreen.storyboard */,
+				CA6704A02BBAC88E0049F26B /* Info.plist */,
+			);
+			path = MagneticDetection_Test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA67048E2BBAC88C0049F26B /* MagneticDetection_Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA6704A32BBAC88E0049F26B /* Build configuration list for PBXNativeTarget "MagneticDetection_Test" */;
+			buildPhases = (
+				CA67048B2BBAC88C0049F26B /* Sources */,
+				CA67048C2BBAC88C0049F26B /* Frameworks */,
+				CA67048D2BBAC88C0049F26B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagneticDetection_Test;
+			packageProductDependencies = (
+				CA6704AB2BBB09170049F26B /* SnapKit */,
+				CA6704AD2BBB09170049F26B /* SnapKit-Dynamic */,
+				CA0DB3632BBD988200487C31 /* Lottie */,
+			);
+			productName = MagneticDetection_Test;
+			productReference = CA67048F2BBAC88C0049F26B /* MagneticDetection_Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA6704872BBAC88C0049F26B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					CA67048E2BBAC88C0049F26B = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = CA67048A2BBAC88C0049F26B /* Build configuration list for PBXProject "MagneticDetection_Test" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA6704862BBAC88C0049F26B;
+			packageReferences = (
+				CA6704AA2BBB09160049F26B /* XCRemoteSwiftPackageReference "SnapKit" */,
+				CA0DB3622BBD988200487C31 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
+			productRefGroup = CA6704902BBAC88C0049F26B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA67048E2BBAC88C0049F26B /* MagneticDetection_Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA67048D2BBAC88C0049F26B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA55A5DD2BBC856900FF7E2C /* Roboto-ThinItalic.ttf in Resources */,
+				CA55A5DC2BBC856900FF7E2C /* Roboto-Thin.ttf in Resources */,
+				CA55A5D12BBC856900FF7E2C /* LICENSE.txt in Resources */,
+				CA67049C2BBAC88E0049F26B /* Assets.xcassets in Resources */,
+				CA55A5D82BBC856900FF7E2C /* Roboto-LightItalic.ttf in Resources */,
+				CA55A5D42BBC856900FF7E2C /* Roboto-Bold.ttf in Resources */,
+				CA55A5DA2BBC856900FF7E2C /* Roboto-MediumItalic.ttf in Resources */,
+				CA55A5D32BBC856900FF7E2C /* Roboto-BlackItalic.ttf in Resources */,
+				CA67049F2BBAC88E0049F26B /* Base in Resources */,
+				CA55A5D62BBC856900FF7E2C /* Roboto-Italic.ttf in Resources */,
+				CA55A5D52BBC856900FF7E2C /* Roboto-BoldItalic.ttf in Resources */,
+				CA55A5D92BBC856900FF7E2C /* Roboto-Medium.ttf in Resources */,
+				CA55A5DB2BBC856900FF7E2C /* Roboto-Regular.ttf in Resources */,
+				CA55A5D22BBC856900FF7E2C /* Roboto-Black.ttf in Resources */,
+				CA55A5D72BBC856900FF7E2C /* Roboto-Light.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA67048B2BBAC88C0049F26B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA0DB3692BBDF1F800487C31 /* ResultWifiScanViewController.swift in Sources */,
+				CA6704A92BBB02FA0049F26B /* GaugeViewElements.swift in Sources */,
+				CA0DB36D2BBEAF4E00487C31 /* DetailWifiScanViewController.swift in Sources */,
+				CA6704972BBAC88C0049F26B /* MagnetometerVC.swift in Sources */,
+				CA55A5C22BBC7A4A00FF7E2C /* ButtonCell.swift in Sources */,
+				CA0DB3792BC0585400487C31 /* CustomNavigationController.swift in Sources */,
+				CA6704932BBAC88C0049F26B /* AppDelegate.swift in Sources */,
+				CA0DB3832BC68AB700487C31 /* MagnetometerManager.swift in Sources */,
+				CA6704A72BBAF2B10049F26B /* PreviewExt+.swift in Sources */,
+				CA0DB36B2BBDFC2200487C31 /* ResultWifiScanTableViewCell.swift in Sources */,
+				CA0DB3662BBD9C3A00487C31 /* ScanRadarView.swift in Sources */,
+				CA0DB3772BC039FA00487C31 /* DevicesData.swift in Sources */,
+				CA0DB3612BBD841900487C31 /* ScanNetworkViewController.swift in Sources */,
+				CA55A5DF2BBCA8F800FF7E2C /* MiddleView.swift in Sources */,
+				CA0DB37F2BC5571000487C31 /* CustomTableView.swift in Sources */,
+				CA6704952BBAC88C0049F26B /* SceneDelegate.swift in Sources */,
+				CA0DB3712BBECD9D00487C31 /* DetailsViewCell.swift in Sources */,
+				CA0DB3752BC032B800487C31 /* Font+.swift in Sources */,
+				CA55A5BF2BBC71AD00FF7E2C /* +.swift in Sources */,
+				CA0DB37B2BC0ACFF00487C31 /* CustomButton.swift in Sources */,
+				CA0DB37D2BC43DEC00487C31 /* FakeWiFiScanManager.swift in Sources */,
+				CA0DB36F2BBEAF9900487C31 /* DetailsViewHeader.swift in Sources */,
+				CA6704B52BBC2EEB0049F26B /* GaugeView.swift in Sources */,
+				CA55A5BC2BBC718100FF7E2C /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA67049D2BBAC88E0049F26B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA67049E2BBAC88E0049F26B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA6704A12BBAC88E0049F26B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA6704A22BBAC88E0049F26B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA6704A42BBAC88E0049F26B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 685HTA7V8T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MagneticDetection_Test/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.MagneticDetection-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA6704A52BBAC88E0049F26B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 685HTA7V8T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MagneticDetection_Test/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.MagneticDetection-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA67048A2BBAC88C0049F26B /* Build configuration list for PBXProject "MagneticDetection_Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6704A12BBAC88E0049F26B /* Debug */,
+				CA6704A22BBAC88E0049F26B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA6704A32BBAC88E0049F26B /* Build configuration list for PBXNativeTarget "MagneticDetection_Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6704A42BBAC88E0049F26B /* Debug */,
+				CA6704A52BBAC88E0049F26B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA0DB3622BBD988200487C31 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.1;
+			};
+		};
+		CA6704AA2BBB09160049F26B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA0DB3632BBD988200487C31 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA0DB3622BBD988200487C31 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+		CA6704AB2BBB09170049F26B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA6704AA2BBB09160049F26B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		CA6704AD2BBB09170049F26B /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA6704AA2BBB09160049F26B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CA6704872BBAC88C0049F26B /* Project object */;
+}
