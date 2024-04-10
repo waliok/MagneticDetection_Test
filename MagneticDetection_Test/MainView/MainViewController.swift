@@ -65,7 +65,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource {
             make.leading.equalToSuperview().offset(33)
             make.trailing.equalToSuperview().offset(-33)
             make.bottom.equalTo(middleView.snp.top).offset(-15)
-            make.height.equalTo(isBigResolution() ? 200 : 130)
+            make.height.equalTo(isBigResolution() ? wifiGroupView.snp.height : 130)
         }
         
         middleView.snp.makeConstraints { make in

@@ -24,17 +24,17 @@ struct Feature {
     let imageName: String
 }
 
- func isBigResolution() -> Bool {
-        let mainScreen = UIScreen.main
-        let screenSize = mainScreen.bounds.size
-
-        // Calculate the aspect ratio
-        let aspectRatio = screenSize.width / screenSize.height
-
-        // Check if the aspect ratio matches that of small iPhones on iOS 15
-        if aspectRatio == 9.0 / 19.5 {
-            return true
-        } else {
-            return false
-        }
+func isBigResolution() -> Bool {
+    let mainScreen = UIScreen.main
+    let screenSize = mainScreen.bounds.size
+    
+    // Calculate the aspect ratio
+    let aspectRatio = round(1000 * (screenSize.width / screenSize.height)) / 1000
+    let bigResolutionAspectRatio = round(1000 * (9.0 / 19.5)) / 1000
+    // Check if the aspect ratio matches that of small iPhones on iOS 15
+    if aspectRatio <= bigResolutionAspectRatio {
+        return true
+    } else {
+        return false
     }
+}
